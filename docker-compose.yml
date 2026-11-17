@@ -1,0 +1,14 @@
+services:
+
+  mango-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: mango-and-stuff
+
+
+    ports:
+      - "8088:80"
+
+    restart: unless-stopped
